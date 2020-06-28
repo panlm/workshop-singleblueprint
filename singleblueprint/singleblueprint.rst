@@ -5,45 +5,6 @@
 创建单虚拟机蓝图
 ----------------
 
-开始你第一个蓝图
-++++++++++++++++
-
-按照下图选在 **左侧倒数第二个图标** ，选择创建第一个蓝图
-
-  .. figure:: images/f1.png
-      :width: 70 %
-
-选择 **Next** 
-
-  .. figure:: images/f2.png
-      :width: 70 %
-
-选择 **Next** 
-
-  .. figure:: images/f3.png
-      :width: 70 %
-
-选择 **Next** 
-
-  .. figure:: images/f4.png
-      :width: 70 %
-
-用自己的名字命名应用，选择 **Launch and Create App**
-
-  .. figure:: images/f5.png
-      :width: 70 %
-
-等待蓝图创建完成
-
-  .. figure:: images/f6.png
-      :width: 70 %
-
-从右上角选择 **Launch Console** ，并使用默认用户名口令登录  **root / nutanix/4u**
-
-  .. figure:: images/f7.png
-      :width: 70 %
-
-
 创建自定义蓝图
 ++++++++++++++
 
@@ -57,7 +18,7 @@
   .. figure:: images/s1.png
       :width: 70 %
 
-使用你自己的名字命名虚拟机名称，**Cloud** 选择 **Nutanix** ，操作系统选择 **Linux**
+使用你自己的名字命名虚拟机名称， **Cloud** 选择 **Nutanix** ，操作系统选择 **Linux**
 
   .. figure:: images/s2.png
       :width: 70 %
@@ -117,6 +78,67 @@
 选择页面右上角 **Launch** ，运行这个蓝图，并用自己名字命名这个App
 
   .. figure:: images/s5.png
+      :width: 70 %
+
+
+修改资源
+++++++++
+
+- 进入 **App** 页面
+- 选择刚才运行的应用
+
+  .. figure:: images/up1.png
+      :width: 70 %
+
+- 选择右上角 **Update** --> **Update VM Configuration**
+- 修改CPU数量 **2** --> **4**
+- 修改内存数量 **4** --> **8**
+
+  .. figure:: images/up2.png
+      :width: 70 %
+
+  .. figure:: images/up3.png
+      :width: 70 %
+
+  .. note:: 缩小配置会导致虚拟机关机并重启
+
+修改Action
+++++++++++
+
+- 进入 **App** 页面
+- 选择刚才运行的应用
+- 选择右上角 **Update** --> **Update Actions & Credentials**
+
+  .. figure:: images/act1.png
+      :width: 70 %
+
+- 选择 **+Add action**
+- 在左上角给Action命名，比如 **My Action1**
+
+  .. figure:: images/act2.png
+      :width: 70 %
+
+- 选择Task，并输入具体需要执行的Task内容，如下图
+
+  .. figure:: images/act3.png
+      :width: 70 %
+
+- 完成后选择 **Done** ， 并再次确认修改，选择 **Confirm**
+
+  .. figure:: images/act4.png
+      :width: 70 %
+
+- 新Action已经创建，选择 **Update** ， 保存修改
+
+  .. figure:: images/act5.png
+      :width: 70 %
+
+- 从应用页面中查看Action已经被创建，并执行
+
+  .. figure:: images/act6.png
+      :width: 70 %
+
+  .. figure:: images/act7.png
       :width: 70 %
 
 
